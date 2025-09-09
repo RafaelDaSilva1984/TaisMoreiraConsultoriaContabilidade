@@ -1,0 +1,27 @@
+.introducao-bg {
+  background-color: rgb(61, 59, 59);
+}
+.introducao-titulo {
+  color: #fff;
+}
+.introducao-conteudo {
+  color: #fff;
+  text-transform: capitalize;
+}
+.introducao-bg ol li {
+  color: #f1da05;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.introducao-bg {
+  display: block;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+}
