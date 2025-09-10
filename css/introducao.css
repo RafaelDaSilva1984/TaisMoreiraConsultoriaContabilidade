@@ -51,7 +51,7 @@ a {
   gap: 0.5rem;
 }
 .navegacao-menu-classificacao a:hover {
-  color: rgba(168, 98, 70, 0.8);
+  color: rgb(0, 119, 181);
 }
 
 .introducao-bg h2::before {
@@ -60,12 +60,8 @@ a {
   display: block;
   height: 0.25rem;
   width: 25rem;
-  background-color: rgba(168, 98, 70, 0.8);
-  background: linear-gradient(
-    to right,
-    rgba(168, 98, 70, 0.8),
-    rgb(240, 167, 154)
-  );
+  background-color: rgb(0, 119, 181);
+  background: linear-gradient(to right, rgb(0, 119, 181), rgb(29, 198, 228));
   margin-top: -1rem;
   border-radius: 10rem;
 }
@@ -87,7 +83,7 @@ a {
   place-self: end start;
   font-size: 1.75rem;
   line-height: 1.75rem;
-  max-width: 507px;
+  max-width: 650px;
   text-align: left;
 }
 .container-introducao-conteudo p {
@@ -100,7 +96,7 @@ a {
   margin-bottom: 2rem;
   font-size: 1.25rem;
   line-height: 1.25rem;
-  max-width: 507px;
+  max-width: 650px;
   text-align: left;
 }
 .container-introducao-navegacao {

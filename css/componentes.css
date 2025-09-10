@@ -1,17 +1,35 @@
 .detalhe {
-  color: rgb(240, 167, 154);
+  color: rgb(0, 119, 181);
   font-size: 4rem;
   font-weight: bold;
 }
+.detalhe-botao {
+  color: rgb(29, 198, 228);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 .botao {
   text-decoration: none;
-  background: rgba(235, 99, 75, 0.5);
-  padding: 1rem 2rem;
-  color: #000000;
+  background: rgb(0, 119, 181);
+  padding: 1rem 2.5rem;
+  color: #f1f1f1;
   border-radius: 2rem;
-  text-transform: capitalize;
   font-weight: 900;
 }
 .botao:hover {
-  background: rgb(240, 167, 154);
+  background: rgba(240, 243, 243, 0.7);
+  color: #222222;
+  border: solid 1px rgb(29, 198, 228);
+}
+@media (max-width: 400px) {
+  .botao {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
 }
