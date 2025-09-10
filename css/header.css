@@ -2,7 +2,7 @@
   max-width: 85rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f7f6f4;
+  background-color: #fff;
 }
 .header {
   display: flex;
@@ -13,22 +13,22 @@
   box-sizing: border-box;
   padding: 1.25rem;
 }
-.header-menu {
+.navegacao-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   list-style-type: none;
 }
-
-.header-menu a {
+.navegacao-menu a {
   padding: 0.5rem 0;
   display: inline-block;
   color: #302102;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   position: relative;
   text-decoration: none;
 }
+
 .header-img img {
   display: block;
   height: auto;
@@ -36,21 +36,19 @@
   border: solid 2px #f7f6f4;
   border-radius: 5rem;
 }
-
-.header-menu a::after {
+.navegacao-menu a::after {
   position: absolute;
   content: "";
   display: block;
   height: 0.1rem;
   width: 0rem;
   background-color: rgba(168, 98, 70, 0.8);
-
   margin-top: 0.05rem;
 }
-.header-menu a:hover {
+.navegacao-menu a:hover {
   color: rgba(168, 98, 70, 0.8);
 }
-.header-menu a:hover::after {
+.navegacao-menu a:hover::after {
   width: 100%;
   transition: 0.3s;
 }
@@ -59,27 +57,27 @@
     padding: 1rem;
     justify-content: center;
   }
-  .header-menu {
+  .navegacao-menu {
     gap: 1rem;
   }
-  .header-menu a {
+  .navegacao-menu a {
     padding: 0.75rem 1rem;
     font-size: 1.5rem;
   }
+  .header-bg {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 @media (max-width: 450px) {
-  .header {
-    align-items: center;
-    justify-content: center;
-  }
-  .header-menu {
-    gap: 0.5rem;
-  }
-  .header-menu a {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.75;
+  .header nav {
+    display: none;
   }
   .header-img {
     display: none;
+  }
+  .header-bg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }

@@ -1,4 +1,4 @@
-// const cabecalho = document.querySelector(".header-bg");
+const links = document.querySelectorAll(".header-menu a");
 const logo_marca = document.querySelector(".header-img");
 
 function mudarCorBordaLogo(event) {

@@ -3,3 +3,15 @@
   font-size: 4rem;
   font-weight: bold;
 }
+.botao {
+  text-decoration: none;
+  background: rgba(235, 99, 75, 0.5);
+  padding: 1rem 2rem;
+  color: #000000;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+.botao:hover {
+  background: rgb(240, 167, 154);
+}
