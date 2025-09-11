@@ -1,0 +1,35 @@
+:root {
+  --cor-8: rgba(145, 90, 90, 0.1);
+  --cor-7: #000000; /* preto */
+  --cor-6: #0077b533; /* azul primária com transparência */
+  --cor-5: #0077b5; /* azul linkedin vibe */
+  --cor-4: #1dc6e4; /* azul turquesa */
+  --cor-3: #03f5f5; /* ciano neon */
+  --cor-2: #ffffff; /* fundo claro nivel 2 */
+  --cor-1: #f2f8ff; /* fundo claro */
+}
+
+.cor-8 {
+  color: rgb(36, 37, 37);
+}
+.cor-7 {
+  color: #000000;
+}
+.cor-6 {
+  color: #0077b533;
+}
+.cor-5 {
+  color: #0077b5;
+}
+.cor-4 {
+  color: #1dc6e4;
+}
+.cor-3 {
+  color: #03f5f5;
+}
+.cor-2 {
+  color: #ffffff;
+}
+.cor-1 {
+  color: #f2f8ff;
+}

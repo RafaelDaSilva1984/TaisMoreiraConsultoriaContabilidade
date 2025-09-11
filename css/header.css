@@ -1,40 +1,41 @@
 .header-bg {
-  max-width: 85rem;
+  max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f1f1f1;
+  background-color: var(--cor-1);
   border-radius: 1rem;
 }
 .header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
   gap: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  padding: 1.25rem;
+  padding: 1rem 1rem;
+  text-align: center;
 }
 .navegacao-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .navegacao-menu a {
   padding: 0.5rem 0;
   display: inline-block;
-  color: #302102;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  color: var(--cor-7);
   position: relative;
   text-decoration: none;
+  align-items: center;
 }
 
 .header-img img {
   display: block;
   height: auto;
   max-width: 100%;
-  border: solid 2px #f7f6f4;
+  border: solid 1px var(--cor-1);
   border-radius: 5rem;
 }
 .navegacao-menu a::after {
@@ -43,16 +44,17 @@
   display: block;
   height: 0.1rem;
   width: 0rem;
-  background-color: rgb(0, 119, 181);
+  background-color: var(--cor-5);
   margin-top: 0.05rem;
 }
 .navegacao-menu a:hover {
-  color: rgb(0, 119, 181);
+  color: var(--cor-5);
 }
 .navegacao-menu a:hover::after {
   width: 100%;
   transition: 0.3s;
 }
+
 @media (max-width: 800px) {
   .header {
     padding: 1rem;
@@ -63,7 +65,6 @@
   }
   .navegacao-menu a {
     padding: 0.75rem 1rem;
-    font-size: 1.5rem;
   }
   .header-bg {
     margin-top: 1.5rem;
@@ -74,9 +75,7 @@
   .header nav {
     display: none;
   }
-  .header-img {
-    display: none;
-  }
+
   .header-bg {
     margin-top: 1rem;
     margin-bottom: 1rem;

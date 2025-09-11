@@ -1,35 +1,38 @@
 .detalhe {
-  color: rgb(0, 119, 181);
+  color: var(--cor-5);
   font-size: 4rem;
   font-weight: bold;
 }
-.detalhe-botao {
-  color: rgb(29, 198, 228);
-  font-size: 4rem;
-  font-weight: bold;
-}
-
 .botao {
   text-decoration: none;
-  background: rgb(0, 119, 181);
-  padding: 1rem 2.5rem;
-  color: #f1f1f1;
+  background: var(--cor-5);
+  padding: 0.125rem 1.5rem;
+  color: var(--cor-1);
   border-radius: 2rem;
-  font-weight: 900;
+  border: solid 1px var(--cor-1);
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  transition: all 0.3s;
 }
 .botao:hover {
-  background: rgba(240, 243, 243, 0.7);
-  color: #222222;
-  border: solid 1px rgb(29, 198, 228);
+  background: var(--cor-2);
+  color: var(--cor-5);
+  border: solid 1px var(--cor-6);
 }
-@media (max-width: 400px) {
+
+@media (max-width: 800px) {
   .botao {
-    padding: 0.5rem 1.25rem;
-    font-size: 1rem;
-    display: inline-block;
+    padding: 0.125rem 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
+    max-width: 150px;
+    background-color: var(--cor-3);
+    color: var(--cor-5);
+    font-size: 0.75;
   }
 }

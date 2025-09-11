@@ -1,6 +1,6 @@
 body {
   margin: 0rem;
-  background-color: #f1f1f1;
+  background-color: var(--cor-1);
 }
 img {
   max-width: 100%;

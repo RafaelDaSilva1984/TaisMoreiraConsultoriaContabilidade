@@ -1,0 +1,89 @@
+/*Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /* remove margens padrão */
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.footer-bg {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--cor-8);
+  border-radius: 1rem;
+}
+.footer {
+  padding-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.footer-img {
+  height: auto;
+  max-width: 100%;
+  grid-column: 1;
+  place-self: center start;
+  padding-left: 1.25rem;
+}
+.footer-img img {
+  border-radius: 50%;
+}
+.footer-img img:hover {
+  border: solid 1px rgba(0, 119, 181, 0.2);
+}
+.footer-contato a:hover {
+  color: var(--cor-5);
+}
+.footer-redes {
+  position: relative;
+  grid-column: 2;
+  display: flex;
+  gap: 1rem;
+}
+.footer-redes a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 0.15rem;
+  width: 0rem;
+  background-color: var(--cor-5);
+  bottom: -0.25rem;
+}
+.footer-redes a:hover::after {
+  width: 7.5%;
+}
+.footer-informacoes {
+  grid-column: 3;
+  margin-bottom: 1.5rem;
+}
+.footer-informacoes ul {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.footer-informacoes a:hover {
+  color: var(--cor-5);
+}
+.footer-copy {
+  margin-bottom: 1.5rem;
+  grid-column: 2/4;
+}
