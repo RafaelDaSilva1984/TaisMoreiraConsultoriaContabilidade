@@ -28,21 +28,21 @@ li {
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--cor-8);
-  border-radius: 1rem;
+  background-color: var(--cor-10);
+  border-radius: 2rem;
+  box-sizing: border-box;
 }
 .footer {
-  padding-top: 2.5rem;
+  padding: 4rem 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .footer-img {
   height: auto;
   max-width: 100%;
   grid-column: 1;
-  place-self: center start;
-  padding-left: 1.25rem;
+  place-self: start center;
 }
 .footer-img img {
   border-radius: 50%;
@@ -50,12 +50,21 @@ li {
 .footer-img img:hover {
   border: solid 1px rgba(0, 119, 181, 0.2);
 }
+.footer-contato {
+  grid-column: 2;
+}
+.footer-contato h3 {
+  text-align: start;
+  margin-bottom: 2.5rem;
+}
+.footer-contato ul {
+  margin-bottom: 2rem;
+}
 .footer-contato a:hover {
   color: var(--cor-5);
 }
 .footer-redes {
   position: relative;
-  grid-column: 2;
   display: flex;
   gap: 1rem;
 }
@@ -73,17 +82,67 @@ li {
 }
 .footer-informacoes {
   grid-column: 3;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  place-self: center center;
+}
+
+.footer-informacoes h3 {
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 .footer-informacoes ul {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  vertical-align: auto;
+}
+.footer-link li {
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 .footer-informacoes a:hover {
-  color: var(--cor-5);
+  /* color: var(--cor-5); */
+  text-decoration: underline;
 }
 .footer-copy {
-  margin-bottom: 1.5rem;
   grid-column: 2/4;
+}
+.footer-texto {
+  grid-column: 3;
+}
+
+/* .footer-informacoes li:first-child {
+  margin-bottom: 2.5rem;
+} */
+
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+  .footer-redes,
+  .footer-informacoes,
+  .footer-copy {
+    grid-column: 1; /* força todos a ficarem na primeira coluna */
+    place-self: center;
+  }
+  .footer-img {
+    margin-bottom: 1rem;
+    place-self: center;
+  }
+  .footer-contato h3 {
+    margin-bottom: 1.5rem;
+  }
+  .footer-informacoes h3 {
+    margin-bottom: 1.5rem;
+  }
+  .footer-contato ul {
+    margin-bottom: 1.5rem;
+  }
+  .footer-redes {
+    margin-bottom: 0.5rem;
+  }
+  .footer-link {
+    margin-bottom: -2rem;
+  }
 }

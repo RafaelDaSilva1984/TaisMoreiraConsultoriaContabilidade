@@ -1,0 +1,182 @@
+/* ====== CONTAINER GERAL ====== */
+.container-contato {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  box-sizing: border-box;
+}
+
+.contato-bg {
+  background: var(--cor-2); /* usa sua var de cor */
+  border-radius: 2rem;
+}
+
+/* ====== TEXTO INTRO ====== */
+.contato p {
+  margin-bottom: 1rem;
+}
+
+.contato h1 {
+  line-height: 1.2;
+  max-width: 35ch;
+}
+
+.detalhe {
+  color: var(--cor-5);
+}
+
+/* ====== SEÇÃO ESQUERDA (dados) ====== */
+.contato-dados h2 {
+  margin-bottom: 2rem;
+}
+
+/* ====== FORM ====== */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--cor-9);
+  border-radius: 0.5rem;
+  background: var(--cor-2);
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--cor-5);
+  box-shadow: 0 0 0 2px rgba(0, 119, 181, 0.2);
+  outline: none;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.introducao-mei-bg {
+  background-color: var(--cor-11);
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem;
+}
+.introducao-img {
+  position: absolute;
+  grid-column: 1; /* segunda coluna */
+  place-self: center start;
+}
+.introducao-img img {
+  width: 650px; /* ajuste conforme precisar */
+  height: 662px;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  object-fit: cover; /* mantém a proporção sem distorcer */
+  display: block;
+}
+.introducao-mei {
+  grid-column: 2;
+  margin-bottom: 2.5rem;
+}
+.introducao-mei img {
+  border-radius: 2rem;
+  margin-bottom: 2.5rem;
+}
+.introducao-mei h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.introducao-mei-navegacao {
+  grid-column: 2;
+  place-self: center;
+  text-align: start;
+  position: relative;
+}
+.introducao-mei-navegacao h2 {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.introducao-mei-navegacao h2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 0.25rem;
+  width: 25rem;
+  background-color: var(--cor-5);
+  background: linear-gradient(
+    to right,
+    var(--cor-10),
+    var(--cor-5),
+    var(--cor-11)
+  );
+  margin-top: -2rem;
+  border-radius: 10rem;
+  margin-bottom: 2rem;
+}
+.introducao-navegacao-links img {
+  display: inline-block;
+}
+.introducao-navegacao-links a {
+  display: inline-flex;
+  color: var(--cor-7);
+  line-height: 1.5rem;
+  position: relative;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+.introducao-navegacao-links a:hover {
+  color: var(--cor-5);
+}
+/* ====== RESPONSIVO ====== */
+@media (max-width: 800px) {
+  .introducao-mei-bg {
+    grid-template-columns: 1fr;
+  }
+  .introducao-img {
+    display: none;
+  }
+  .introducao-mei h1 {
+    text-align: center;
+  }
+  .introducao-mei-navegacao h2::before {
+    max-width: 150px;
+  }
+  .container-contato {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .col-2 {
+    grid-column: 1;
+  }
+  .botao {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+  }
+}

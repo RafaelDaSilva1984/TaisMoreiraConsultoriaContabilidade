@@ -25,7 +25,6 @@
 .navegacao-menu a {
   padding: 0.5rem 0;
   display: inline-block;
-  color: var(--cor-7);
   position: relative;
   text-decoration: none;
   align-items: center;
@@ -61,10 +60,7 @@
     justify-content: center;
   }
   .navegacao-menu {
-    gap: 1rem;
-  }
-  .navegacao-menu a {
-    padding: 0.75rem 1rem;
+    display: none;
   }
   .header-bg {
     margin-top: 1.5rem;

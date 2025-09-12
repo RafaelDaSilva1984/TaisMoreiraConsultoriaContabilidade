@@ -1,4 +1,7 @@
 :root {
+  --cor-11: #f1f1f1;
+  --cor-10: #f9f6ee;
+  --cor-9: #002868;
   --cor-8: rgba(145, 90, 90, 0.1);
   --cor-7: #000000; /* preto */
   --cor-6: #0077b533; /* azul primária com transparência */
@@ -9,8 +12,17 @@
   --cor-1: #f2f8ff; /* fundo claro */
 }
 
+.cor-11 {
+  color: var(--cor-11);
+}
+.cor-10 {
+  color: var(--cor-10);
+}
+.cor-9 {
+  color: #002868;
+}
 .cor-8 {
-  color: rgb(36, 37, 37);
+  color: rgba(145, 90, 90, 0.1);
 }
 .cor-7 {
   color: #000000;
