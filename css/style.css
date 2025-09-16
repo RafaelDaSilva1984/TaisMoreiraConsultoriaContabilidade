@@ -1,11 +1,7 @@
 @import "./global.css";
 @import "./header.css";
 @import "./introducao.css";
-@import "./mei.css";
-@import "./irpf.css";
-@import "./simples.css";
-@import "./presumido.css";
-@import "./real.css";
+@import "./classificacoes.css";
 @import "./componentes.css";
 @import "./cores/cores.css";
 @import "./tipografia/tipografia.css";
