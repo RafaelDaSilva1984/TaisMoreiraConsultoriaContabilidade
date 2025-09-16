@@ -32,10 +32,12 @@
 
 .header-img img {
   display: block;
+  width: 175px;
   height: auto;
-  max-width: 100%;
-  border: solid 1px var(--cor-1);
-  border-radius: 5rem;
+  border: solid 2px var(--cor-1);
+  border-radius: 100%;
+  background: nome;
+  object-fit: contain;
 }
 .navegacao-menu a::after {
   position: absolute;
