@@ -77,7 +77,7 @@ li {
   bottom: -0.25rem;
 }
 .footer-redes a:hover::after {
-  width: 11.5%;
+  width: 2rem;
 }
 .footer-informacoes {
   margin-bottom: 2rem;
@@ -147,7 +147,7 @@ li {
     margin-bottom: 1.5rem;
   }
   .footer-redes a:hover::after {
-    width: 40%;
+    width: 2rem;
   }
   .footer-copy {
     text-align: center;
