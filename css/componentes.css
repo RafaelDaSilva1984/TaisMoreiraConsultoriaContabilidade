@@ -26,13 +26,19 @@
 
 @media (max-width: 800px) {
   .botao {
-    padding: 0.125rem 5rem;
+    padding: 1.5rem rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 250px;
-    background-color: var(--cor-9);
+    max-width: 40ch;
+    background: var(--cor-9);
+    border: 1px solid var(--cor-1);
+    color: var(--cor-1);
+    font-size: 0.25;
+  }
+  .botao:hover {
+    background: var(--cor-9);
     color: var(--cor-3);
-    font-size: 0.75;
+    border: solid 1px var(--cor-3);
   }
 }

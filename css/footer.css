@@ -114,6 +114,20 @@ li {
 }
 
 @media (max-width: 1000px) {
+  .footer-bg {
+    padding: 0.5rem 1.5rem;
+  }
+  .footer-informacoes h3 {
+    margin-top: -4rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-contato h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  .footer-informacoes li:nth-child(2) {
+    margin-bottom: -2rem;
+  }
   .footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -126,11 +140,14 @@ li {
   }
   .footer-informacoes {
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
   .footer-redes {
     place-self: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-redes a:hover::after {
+    width: 40%;
   }
   .footer-copy {
     text-align: center;
